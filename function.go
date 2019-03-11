@@ -23,7 +23,7 @@ const (
 	signingKey = "Anekpattanakij-Golang"
 )
 
-func TestAuthen(w http.ResponseWriter, r *http.Request) {
+func TestRequest(w http.ResponseWriter, r *http.Request) {
 	data, _ := ioutil.ReadAll(r.Body)
 	body := Body{}
 	body.Message = string(data)
