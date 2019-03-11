@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/dgrijalva/jwt-go"
+	jwt "github.com/dgrijalva/jwt-go"
 )
 
 type Result struct {
@@ -20,7 +20,7 @@ type Body struct {
 }
 
 const (
-	signingKey = "Anekpattanakij-Golang"
+	signingKey = "Anekpattanakij-Golang-CD"
 )
 
 func TestRequest(w http.ResponseWriter, r *http.Request) {
